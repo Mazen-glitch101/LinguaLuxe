@@ -110,6 +110,7 @@
 
     /* About Section with Logo */
     #about {
+      background: rgba(0, 0, 0, 0.4); /* Slightly darker background */
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -132,41 +133,9 @@
       height: auto;
     }
 
-    /* Learning Section */
-    #learning ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    #learning ul li {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 10px 20px;
-      border-radius: 10px;
-      transition: background 0.3s;
-    }
-
-    #learning ul li:hover {
-      background: rgba(0, 0, 0, 0.8);
-    }
-
-    #learning ul li a {
-      color: #23d5ab;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    #learning ul li a:hover {
-      text-decoration: underline;
-    }
-
     /* Testimonials Section */
     #testimonials {
-      background: rgba(0, 0, 0, 0.4); /* Slightly darker background for contrast */
+      background: rgba(0, 0, 0, 0.5); /* Slightly darker background */
     }
 
     .testimonial-cards {
@@ -202,6 +171,51 @@
     .testimonial-card span {
       font-size: 0.9rem;
       color: #23d5ab;
+    }
+
+    /* Learning Section */
+    #learning {
+      background: rgba(0, 0, 0, 0.4); /* Slightly darker background */
+    }
+
+    .language-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .language-card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .language-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .language-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .language-card p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .language-card a {
+      color: #23d5ab;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .language-card a:hover {
+      text-decoration: underline;
     }
 
     /* Image Styling */
@@ -259,8 +273,8 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#learning">Learning</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#learning">Learning</a></li>
     </ul>
   </nav>
 
@@ -275,7 +289,9 @@
       <p>
         Our business is to help you learn languages with ease, and we provide the best ways to get you ready for speaking the languages you want by giving you PDFs for free!
       </p>
+      <br>
       <a href="#about" class="cta-button">Learn More</a>
+    </br>
     </div>
   </section>
 
@@ -301,8 +317,9 @@
       </p>
       <p>
         Join us on this journey to make language learning a fun and rewarding experience for everyone!
-      </p>
-      <a href="#learning" class="cta-button">Get Started Now</a>
+      </p><br>
+      <a href="#testimonials" class="cta-button">See Testimonials</a>
+    </br>
     </div>
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
@@ -310,23 +327,6 @@
         <path d="M150 30a120 120 0 0 1 0 240M30 150h240M90 90l120 120M90 210l120-120" stroke="#fff" stroke-width="10" fill="none" />
         <text x="50%" y="270" text-anchor="middle" font-family="Poppins, sans-serif" font-size="24" fill="#fff"></text>
       </svg>
-    </div>
-  </section>
-
-  <!-- Learning Section -->
-  <section id="learning">
-    <div class="content">
-      <h1>Learning Resources</h1>
-      <p>
-        We aim to make language learning accessible and enjoyable for everyone. Whether you are a beginner or looking to improve your skills, our resources are designed to help you achieve your language learning goals.
-      </p>
-      <p>Explore our collection of PDFs for various languages:</p>
-      <ul>
-        <li><a href="pdfs/spanish.pdf" target="_blank">Spanish PDFs</a></li>
-        <li><a href="pdfs/french.pdf" target="_blank">French PDFs</a></li>
-        <li><a href="pdfs/german.pdf" target="_blank">German PDFs</a></li>
-        <li><a href="pdfs/japanese.pdf" target="_blank">Japanese PDFs</a></li>
-      </ul>
     </div>
   </section>
 
@@ -351,6 +351,72 @@
           <span>Learned Japanese</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Learning Section -->
+  <section id="learning">
+    <div class="content">
+      <h1>Learning Resources</h1>
+      <p>
+        Explore our collection of PDFs for various languages. Whether you're a beginner or an advanced learner, we have resources tailored to your needs.
+      </p>
+      <div class="language-cards">
+        <div class="language-card">
+          <h3>Spanish</h3>
+          <p>Master Spanish with our comprehensive guides and exercises.</p>
+          <a href="pdfs/spanish.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>English</h3>
+          <p>Improve your English skills with our grammar and vocabulary exercises.</p>
+          <a href="pdfs/english.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>Italian</h3>
+          <p>Learn Italian pronunciation and vocabulary with our audio guides.</p>
+          <a href="pdfs/italian.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>Chinese</h3>
+          <p>Discover Chinese characters and phrases with our practice quizzes.</p>
+          <a href="pdfs/chinese.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>Russian</h3>
+          <p>Explore Russian grammar and culture with our engaging resources.</p>
+          <a href="pdfs/russian.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>Arabic</h3>
+          <p>Learn Arabic script and vocabulary with our step-by-step guides.</p>
+          <a href="pdfs/arabic.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>French</h3>
+          <p>Learn French with interactive exercises and audio guides.</p>
+          <a href="pdfs/french.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>German</h3>
+          <p>Understand German grammar and vocabulary with ease.</p>
+          <a href="pdfs/german.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>Japanese</h3>
+          <p>Start speaking Japanese and learn Japanese easily with simplifying letters.</p>
+          <a href="pdfs/japanese.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
+          <h3>Hebrew</h3>
+            <p>Learn Hebrew with our comprehensive guides and exercises.</p>
+            <a href="pdfs/hebrew.pdf" target="_blank">Download PDF</a>
+      </div>
+      <div class="language-card">
+          <h3>Turkish</h3>
+       <p>Learn Turkish easily with simple explanations and practical exercises.</p>
+       <a href="pdfs/Turkish.pdf" target="_blank">Download PDF</a>
+       </div>
     </div>
   </section>
 
