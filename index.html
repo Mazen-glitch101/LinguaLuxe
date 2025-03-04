@@ -218,6 +218,65 @@
       text-decoration: underline;
     }
 
+    /* Contact Section */
+    #contact {
+      background: rgba(0, 0, 0, 0.4); /* Slightly darker background */
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .contact-form button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #23d5ab;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #1aa882;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-form button:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
     /* Image Styling */
     .logo-image {
       width: 150px;
@@ -275,6 +334,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#learning">Learning</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -336,7 +396,7 @@
       <h1>What Our Users Say</h1>
       <div class="testimonial-cards">
         <div class="testimonial-card">
-          <p>"LinguaLuxe helped me learn Spanish in just 3 months! The explnations and teaching are so well-structured and easy to follow."</p>
+          <p>"LinguaLuxe helped me learn Spanish in just 3 months! The explanations and teaching are so well-structured and easy to follow."</p>
           <h3>— Maria Gonzalez</h3>
           <span>Learned Spanish</span>
         </div>
@@ -361,6 +421,7 @@
       <p>
         Explore our collection of PDFs for various languages. Whether you're a beginner or an advanced learner, we have resources tailored to your needs.
       </p>
+      <br>
       <div class="language-cards">
         <div class="language-card">
           <h3>Spanish</h3>
@@ -409,14 +470,34 @@
         </div>
         <div class="language-card">
           <h3>Hebrew</h3>
-            <p>Learn Hebrew with our comprehensive guides and exercises.</p>
-            <a href="pdfs/hebrew.pdf" target="_blank">Download PDF</a>
-      </div>
-      <div class="language-card">
+          <p>Learn Hebrew with our comprehensive guides and exercises.</p>
+          <a href="pdfs/hebrew.pdf" target="_blank">Download PDF</a>
+        </div>
+        <div class="language-card">
           <h3>Turkish</h3>
-       <p>Learn Turkish easily with simple explanations and practical exercises.</p>
-       <a href="pdfs/Turkish.pdf" target="_blank">Download PDF</a>
-       </div>
+          <p>Learn Turkish easily with simple explanations and practical exercises.</p>
+          <a href="pdfs/Turkish.pdf" target="_blank">Download PDF</a>
+        </div>
+      </div>
+    </br>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="content">
+      <h1>Contact Us</h1>
+      <p>
+        Have questions or feedback? We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.
+      </p>
+      <br>
+      <form class="contact-form" action="https://formspree.io/f/mkgodeej" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </br>
     </div>
   </section>
 
