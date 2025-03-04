@@ -164,6 +164,46 @@
       text-decoration: underline;
     }
 
+    /* Testimonials Section */
+    #testimonials {
+      background: rgba(0, 0, 0, 0.4); /* Slightly darker background for contrast */
+    }
+
+    .testimonial-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .testimonial-card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-card span {
+      font-size: 0.9rem;
+      color: #23d5ab;
+    }
+
     /* Image Styling */
     .logo-image {
       width: 150px;
@@ -220,6 +260,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#learning">Learning</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
     </ul>
   </nav>
 
@@ -234,9 +275,7 @@
       <p>
         Our business is to help you learn languages with ease, and we provide the best ways to get you ready for speaking the languages you want by giving you PDFs for free!
       </p>
-      <br>
       <a href="#about" class="cta-button">Learn More</a>
-    </br>
     </div>
   </section>
 
@@ -263,9 +302,7 @@
       <p>
         Join us on this journey to make language learning a fun and rewarding experience for everyone!
       </p>
-    <br>
       <a href="#learning" class="cta-button">Get Started Now</a>
-    </br>
     </div>
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
@@ -290,6 +327,30 @@
         <li><a href="pdfs/german.pdf" target="_blank">German PDFs</a></li>
         <li><a href="pdfs/japanese.pdf" target="_blank">Japanese PDFs</a></li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="content">
+      <h1>What Our Users Say</h1>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>"LinguaLuxe helped me learn Spanish in just 3 months! The PDFs are so well-structured and easy to follow."</p>
+          <h3>— Maria Gonzalez</h3>
+          <span>Learned Spanish</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"I never thought learning French could be this fun. The audio guides are a game-changer!"</p>
+          <h3>— John Smith</h3>
+          <span>Learned French</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"The grammar tips are incredibly helpful. I finally understand Japanese sentence structure!"</p>
+          <h3>— Akira Tanaka</h3>
+          <span>Learned Japanese</span>
+        </div>
+      </div>
     </div>
   </section>
 
